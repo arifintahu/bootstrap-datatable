@@ -90,3 +90,7 @@ body {
       0 0px 25px -7px rgba(0, 0, 0, 0.1)
     ;
 }
+
+#map { 
+    height: 250px; 
+}
