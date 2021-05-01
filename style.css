@@ -1,8 +1,92 @@
 body {
-  background-color: lightblue;
+    background-color: #f8f7fc;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+.color-sidebar {
+    background-image: linear-gradient(#f1f1fd, #f8f7fc);
+}
+
+.color-grey {
+    color: #888888;
+}
+
+.color-gray {
+    color: #BEBEBE;
+}
+
+.color-blue {
+    color: #1E90FF;
+}
+
+.color-dark {
+    color: #303030;
+}
+
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.nav-item.active {
+    border-left: 4px solid #1E90FF;
+}
+
+.nav-item.active > .nav-link > span {
+    color: #1E90FF;
+}
+
+.sidebar {
+    padding: 0;
+}
+
+.page-title {
+    margin: 0;
+}
+
+.profile-photo {
+     box-shadow:
+  0 0.1px 3.6px rgba(0, 0, 0, 0.028),
+  0 0.3px 10px rgba(0, 0, 0, 0.04),
+  0 0.6px 24.1px rgba(0, 0, 0, 0.052),
+  0 2px 80px rgba(0, 0, 0, 0.08)
+;
+}
+
+.borderless td, .borderless th, .borderless thead th {
+    border: none;
+}
+
+.borderless th {
+    font-weight: 500;
+}
+
+.borderless {
+    font-size: 14px;
+    color: #888888;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.borderless td {
+    border: solid 1px white;
+    border-style: solid none;
+    padding: 10px;
+    background-color: white;
+}
+.borderless td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+.borderless td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+.borderless tbody tr {
+    box-shadow:
+      0 0px 1.1px -7px rgba(0, 0, 0, 0.035),
+      0 0px 3.1px -7px rgba(0, 0, 0, 0.05),
+      0 0px 7.5px -7px rgba(0, 0, 0, 0.065),
+      0 0px 25px -7px rgba(0, 0, 0, 0.1)
+    ;
 }
