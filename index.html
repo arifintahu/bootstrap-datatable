@@ -58,18 +58,15 @@
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <div class="d-flex align-items-center">
+          <div class="d-flex justify-content-start flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+            <div class="d-flex align-items-center mr-5">
               <a href="#">
                 <span class="oi oi-menu color-grey pr-3" title="menu" aria-hidden="true"></span>
               </a>
               <span class="h4 page-title color-dark">Home</span>
             </div>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-              </div>
+            <div class="d-flex align-items-center search">
+              <input type="text" class="form-control rounded-pill" placeholder="Search..">
             </div>
           </div>
 
@@ -79,11 +76,19 @@
           </div>
            <div id="map"></div>
 
-          <div class="subtitle d-flex align-items-center mb-3 mt-5">
-            <span class="oi oi-spreadsheet color-grey pr-3" aria-hidden="true"></span>
-            <div class="color-dark font-weight-bold">REAL ESTATES</div>
+          <div class="subtitle d-flex align-items-center justify-content-between mb-3 mt-5">
+            <div class="section d-flex align-items-center">
+              <span class="oi oi-spreadsheet color-grey pr-3" aria-hidden="true"></span>
+              <div class="color-dark font-weight-bold">REAL ESTATES</div>
+            </div>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#staticBackdrop">Import</button>
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#staticBackdrop2">Export</button>
+              </div>
+            </div>
           </div>
-          <div class="table-responsive">
+          <div class="table-responsive mb-5">
             <table class="table table-sm borderless">
               <thead>
                 <tr>
@@ -99,53 +104,159 @@
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Jakarta</td>
-                  <td>Indonesia</td>
+                  <td>London</td>
+                  <td>UK</td>
                   <td>100 ft</td>
                   <td>Fit</td>
-                  <td>IDR 5 billion</td>
-                  <td>...</td>
+                  <td>GBP 100 thousand</td>
+                  <td>
+                    <a href="#">
+                      <span class="oi oi-ellipses color-blue" aria-hidden="true"></span>
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Bandung</td>
-                  <td>Indonesia</td>
+                  <td>London</td>
+                  <td>UK</td>
                   <td>200 ft</td>
                   <td>Fit</td>
-                  <td>IDR 8 billion</td>
-                  <td>...</td>
+                  <td>GBP 800 thousand</td>
+                  <td>
+                    <a href="#">
+                      <span class="oi oi-ellipses color-blue" aria-hidden="true"></span>
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Bandung</td>
-                  <td>Indonesia</td>
+                  <td>Manchester</td>
+                  <td>UK</td>
                   <td>200 ft</td>
                   <td>Fit</td>
-                  <td>IDR 8 billion</td>
-                  <td>...</td>
+                  <td>GBP 50 thousand</td>
+                  <td>
+                    <a href="#">
+                      <span class="oi oi-ellipses color-blue" aria-hidden="true"></span>
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Bandung</td>
-                  <td>Indonesia</td>
+                  <td>Canterbury</td>
+                  <td>UK</td>
                   <td>200 ft</td>
                   <td>Fit</td>
-                  <td>IDR 8 billion</td>
-                  <td>...</td>
+                  <td>GBP 100 thousand</td>
+                  <td>
+                    <a href="#">
+                      <span class="oi oi-ellipses color-blue" aria-hidden="true"></span>
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Bandung</td>
-                  <td>Indonesia</td>
+                  <td>Bristol</td>
+                  <td>UK</td>
                   <td>200 ft</td>
                   <td>Fit</td>
-                  <td>IDR 8 billion</td>
-                  <td>...</td>
+                  <td>GBP 80 thousand</td>
+                  <td>
+                    <a href="#">
+                      <span class="oi oi-ellipses color-blue" aria-hidden="true"></span>
+                    </a>
+                  </td>
                 </tr>
               </tbody>
             </table>
+            <div class="pagination justify-content-center">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </main>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Import</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="regForm" action="">
+              <div class="tab">
+                <p><input class="form-control" type="text" placeholder="State" oninput="this.className = ''"></p>
+                <p><input class="form-control" type="text" placeholder="Country" oninput="this.className = ''"></p>
+                <p><input class="form-control" type="text" placeholder="Zip Code" oninput="this.className = ''"></p>
+
+              </div>
+
+              <div class="tab">
+                <p><input class="form-control" type="text" placeholder="Records" oninput="this.className = ''"></p>
+                <p><input class="form-control" type="text" placeholder="Records" oninput="this.className = ''"></p>
+                <p><input class="form-control" type="text" placeholder="Records" oninput="this.className = ''"></p>
+              </div>
+
+              <div style="overflow:auto;">
+                <div style="float:right;">
+                  <button class="btn btn-outline-primary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                  <button class="btn btn-outline-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+              </div>
+
+              <!-- Circles which indicates the steps of the form: -->
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel2">Export</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">File format</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>png</option>
+                  <option>jpg</option>
+                  <option>svg</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
